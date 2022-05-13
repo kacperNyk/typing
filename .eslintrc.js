@@ -9,5 +9,13 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {},
+  rules: {
+    "no-unused-vars": "warn",
+    "no-unused-expressions": "warn",
+    "no-use-before-define": [
+      "error",
+      { functions: false, classes: true, variables: true },
+    ],
+    "no-sequences": "warn",
+  },
 };
